@@ -1,0 +1,113 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+      }
+
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: crimson;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: green;
+      }
+    }
+  }
+}
+
+.contact-container{
+  background-color:transparent;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.border{
+  border-color: #ffffff;
+  color: white;
+}
+#youtube-btn {
+  border-color: #f83f37;
+  color: #f83f37;
+}
+#youtube-btn:hover {
+  background-color: #f83f37;
+  color: #ffffff;
+}
+
+#contact{
+  margin: 0px;
+}
+.m-2{
+  margin:20px;
+  overflow: hidden;
+}
+.d-flex justify-content-center flex-wrap{
+  overflow-y: hidden;
+}
